@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DefaultLoginLayoutComponent } from './componentes/default-login-layout/default-login-layout.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DefaultLoginLayoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
+  ],
+  exports: [
+    DefaultLoginLayoutComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
