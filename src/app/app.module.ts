@@ -10,13 +10,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimaryInputComponent } from './componentes/primary-input/primary-input.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DefaultLoginLayoutComponent,
     LoginComponent,
-    PrimaryInputComponent
+    PrimaryInputComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
