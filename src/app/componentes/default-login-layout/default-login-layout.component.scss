@@ -40,7 +40,7 @@ main {
       justify-content: center;
       align-items: center;
       width: 100%;
-      gap: 30px;
+      gap: 1rem;
 
       .divider {
         display: flex;
@@ -70,6 +70,11 @@ main {
         background: transparent;
         padding: 12px 24px;
         cursor: pointer;
+
+        &:disabled {
+          opacity: 0.8;
+          cursor: not-allowed;
+        }
 
         &.btnPrimary {
           background-color: $primary-color;

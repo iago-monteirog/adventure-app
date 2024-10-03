@@ -7,7 +7,7 @@
     <ng-content></ng-content>
 
     <div class="btnWrapper">
-      <button class="btnPrimary" (click)="submit()">{{primaryBtnText}}</button>
+      <button class="btnPrimary" (click)="submit()" [disabled]="disablePrimaryButton">{{primaryBtnText}}</button>
       <div class="divider">
         <div></div>
         <span>or</span>
